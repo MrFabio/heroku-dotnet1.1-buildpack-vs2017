@@ -100,8 +100,9 @@ printf 'Found %s .sln files\n' $(echo "$SOLUTION_FILES" | wc -l | tr -d ' ')
 SOLUTION_FILE_FOUND=$(echo "$SOLUTION_FILES" | head -1)
 
 #Get project name
-PROJECT_NAME="${SOLUTION_FILE_FOUND##*/}"
-PROJECT_NAME="${PROJECT_NAME/.sln/}"
+#PROJECT_NAME="${SOLUTION_FILE_FOUND##*/}"
+#PROJECT_NAME="${PROJECT_NAME/.sln/}"
+PROJECT_NAME="ResidentesServer"
 
 echo "Project name: ${PROJECT_NAME}"
 
